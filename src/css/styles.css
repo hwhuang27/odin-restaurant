@@ -1,38 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
 
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 .header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     border-bottom: 1px solid black;
+    padding-top: 24px;
+    background-color: #14b8a6;
+    
 }
 
 .header h1{
-    font-weight: 400;
+    font-size: 48px;
+    padding-left: 36px;
+    font-weight: bold;
+    justify-self: center;
+    color: #ef4444;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .header nav{
-    justify-self: right;
-
-    justify-items: center;
-    align-items: center;
-    margin-right: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 0 64px;
 }
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: #fef08a;
     font-size: 36px;
 }
 
-.container{
+.home-container{
+    display: grid;
+    justify-content: center;
 }
 
-img{
+.chumImg{
+    height: 666px;
+}
+
+.menu-container{
+    margin-top: 24px;
+    display: grid;
+    justify-content: center;
+}
+
+.menu-container ul{
+    font-size: 36px;
+    line-height: 2;
+}
+
+.contact-container{
+    margin-top: 24px;
+    display: grid;
+    justify-content: center;
+}
+
+.contact-container h1{
+    padding-bottom: 12px;
+    font-size: 36px;
+    justify-self: center;
+}
+
+.contact-container p{
+    padding-bottom: 24px;
+    font-size: 24px;
+    justify-self: center;
+    white-space: pre;
+    text-align: center;
+    line-height: 1.5;
 }
